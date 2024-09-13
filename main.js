@@ -1,12 +1,12 @@
 const menuicon =document.getElementById("menu-icon");
-const menu =document.getElementById("nav-menu");
+const menu =document.getElementById("navbar");
 
 // use eventlistener (click listener)..click korle nav bar show krbe
 menuicon.addEventListener("click", () => {
-  if(menu.className === 'hidden'){
-      menu.classList.remove('hidden');
+  if(menu.className === 'navbar'){
+      menu.classList.remove('navbar');
   }else{
-    menu.classList.add('hidden');
+    menu.classList.add('navbar');
 
   }
 });

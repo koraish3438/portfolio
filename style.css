@@ -103,11 +103,14 @@ a {
 
 .logo img {
   height: 4.5rem;
-  margin: .5rem;
+  padding: .5rem;
+  margin-left: .7rem;
+  display: flex;
 }
 
 
 .navbar {
+  display: none;
   padding: 2rem;
   transition: right .4s;
 }
@@ -148,8 +151,9 @@ a {
   font-size: 1.5rem;
   color: var(--title-color);
   position: absolute;
-  top: 2rem;
+  top: 1.3rem;
   right: 1rem;
+  cursor: pointer;
 }
 
 
