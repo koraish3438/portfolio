@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --header-color: #050222;
+  
+  --hue: 230;
+  --first-color: hsl(var(--hue), 55%, 55%);
+  --first-color-light: hsl(var(--hue), 55%, 65%);
+  --first-color-alt: hsl(var(--hue), 50%, 50%);
+  --title-color: hsl(var(--hue), 30%, 95%);
+  --text-color: hsl(230, 20%, 80%);
+  --text-color-light: hsl(var(--hue), 20%, 70%);
+  --body-color: #181e39;
+  --container-color: hsl(var(--hue), 40%, 20%);
+
+  --font-1: "Syne", sans-serif;
+
+   /*========== Font Size ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Syne", sans-serif;
+    --biggest-font-size: 3rem;
+    --big-font-size: 1.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+body , input , textarea , button {
+    font-family: var(--font-1);
+    font-size: var(--normal-font-size);
+}
+
+input , button , textarea {
+  border: none;
+  outline: none;
+}
+
+h1 , h2 , h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  /* font-family: "Playwrite CU", cursive; */
+  /* font-family: "Montserrat", sans-serif;font-family: "Roboto", sans-serif; */
+  /* font-family: "Italianno", cursive; */
+  /* font-family: var(--font-1); */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  line-height: 130%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* header section start  */
+
+/* .header {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+} */
+
+.container {
+  background-color: var(--header-color);
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.logo img {
+  height: 4.5rem;
+  margin: .5rem;
+}
+
+
+.navbar {
+  padding: 2rem;
+  transition: right .4s;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.nav-menu li a {
+  position: relative;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav-menu a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--first-color-light);
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  transition: width .3s;
+}
+
+.nav-menu a:hover {
+  color: var(--first-color);
+}
+
+.nav-menu a:hover::after{
+  width: 60%;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+
+
+
+/* header section end  */
+
+/* main section start  */
+
+/* ====this is home section=====  */
+.home{
+  text-align: center;
+}
+.home-photo img {
+  height: 20rem;
+  text-align: right;
+  mask-image: linear-gradient(to bottom, hsl(230, 40%, 16%) 80%, transparent 100%);
+}
+
+.home-desc {
+  margin: 1rem;
+  text-align: left;
+  position: relative;
+}
+
+.home-desc h3 {
+  margin-top: 1rem;
+}
+
+.home-desc h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 4rem;
+  background-color: var(--text-color-light);
+  height: 3px;
+  border-radius: 50px;
+  transition: width .6s;
+}
+
+.home-desc h3:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: .6s;
+}
+
+.home-scrol {
+  margin-top: 3rem;
+  color: var(--title-color);
+  display: inline-flex;
+  column-gap: .5rem;
+  justify-self: center;
+  align-items: center;
+}
+
+.home-scroll-box {
+  font-size: 1.5rem;
+  background-color: var(--first-color);
+  height: 1.5rem;
+  width: 1.5rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.home-scroll-text{
+  font-weight: var(--font-semi-bold);
+}
+
+.home-scroll-box i {
+  animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+  0%{
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(.6rem);
+    opacity: 0;
+  }
+}
+
+/* this is about section  */
+
+
+
+
+/* main section end  */
