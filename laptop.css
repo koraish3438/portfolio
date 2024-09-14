@@ -25,6 +25,8 @@
     /* header section end  */
 
     /* main section start  */
+
+
     .home-photo {
         text-align: right;
         padding-right: 2rem;
@@ -86,6 +88,20 @@
             transition: .4s;
         }
     }
+
+    /* about section start  */
+    .about {
+        margin-top: 10rem;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+      }
+      
+      .info-desc {
+        
+      }
 
     /* main section end  */
 }

@@ -255,16 +255,46 @@ a {
 
 .about-container {
   margin-top: 2rem;
-  text-align: left;
   position: relative;
+  text-align: center;
 }
 
 .info-img img {
   height: 17rem;
-  border: 1rem solid white;
-  padding: 1rem;
+  border: 5px solid white;
+  padding: .8rem;
   border-radius: 5rem;
+  margin-bottom: 2rem;
 }
+
+
+.info-desc h3 , p {
+  text-align: left;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.info-desc p {
+  margin: 2rem 0 2rem 1rem;
+}
+
+.info-desc h3::after {
+  content: '';
+  width: 2rem;
+  height: 3px;
+  background-color: var(--text-color-light);
+  position: absolute;
+  left: 0;
+  bottom: -.3rem;
+  transition: width .4s;
+  border-radius: 50px;
+}
+
+
+
+
+
+
 
 /* .info-title::after {
   content: '';
