@@ -261,6 +261,9 @@ a {
 
 .info-img img {
   height: 17rem;
+  border: 1rem solid white;
+  padding: 1rem;
+  border-radius: 5rem;
 }
 
 /* .info-title::after {
