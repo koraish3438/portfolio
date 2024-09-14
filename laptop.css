@@ -3,10 +3,15 @@
     .container {
         display: flex;
         justify-content: space-between;
+        height: 5rem;
+        position: relative;
     }
 
     .navbar {
         display: block;
+        position: absolute;
+        top: .1rem;
+        right: .1rem;
     }
 
     .nav-menu{

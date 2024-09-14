@@ -259,7 +259,11 @@ a {
   position: relative;
 }
 
-.info-title::after {
+.info-img img {
+  height: 17rem;
+}
+
+/* .info-title::after {
   content: '';
   position: absolute;
   left: 0;
@@ -269,7 +273,7 @@ a {
   height: 3px;
   border-radius: 50px;
   transition: width .6s; 
-}
+} */
 
 
 /* main section end  */
