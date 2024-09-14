@@ -101,6 +101,8 @@ a {
   position: relative;
 }
 
+
+
 .logo img {
   height: 4.5rem;
   padding: .5rem;
@@ -119,6 +121,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  min-height: 40vh;
 }
 
 .nav-menu li a {
@@ -244,7 +247,29 @@ a {
 
 /* this is about section  */
 
+.about {
+  text-align: center;
+  margin: 3rem 0;
+  padding: .5rem;
+}
 
+.about-container {
+  margin-top: 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.info-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 4rem;
+  background-color: var(--text-color-light);
+  height: 3px;
+  border-radius: 50px;
+  transition: width .6s; 
+}
 
 
 /* main section end  */
