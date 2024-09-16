@@ -50,6 +50,36 @@
         margin-top: 5rem;
     }
 
+
+    /* about section start  */
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 2rem; */
+    }
+
+    .info-img img {
+        height: 13rem;
+    }
+
+    .info-desc {
+        margin: 2rem 0 0 2rem;
+
+    }
+
+    .info-desc p {
+        margin: 1rem 0 4rem 1rem;
+    }  
+
+    .button {
+        position: absolute;
+        right: 6rem;
+    }
+
+    /* main section end  */
+
+    /* Another screen for responsive */
     @media screen and (min-width: 768px) {
         .home-photo {
             padding-right: 4rem;
@@ -61,6 +91,30 @@
             margin-left: 5rem;
             transition: .4s;
         }
+        
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            /* padding: 2rem; */
+        }
+    
+        .info-img img {
+            height: 15rem;
+            margin-left: 2rem;
+            transition: .4s;
+        }
+    
+        .info-desc {
+            margin: 2rem 0 0 2rem;
+    
+        }
+    
+        .info-desc p {
+            margin: 1rem 0 5rem 1rem;
+        }
+
+
     }
 
     @media screen and (min-width: 868px) {
@@ -74,6 +128,17 @@
             margin-left: 7rem;
             transition: .4s;
         }
+
+        .info-img img {
+            height: 17rem;
+            margin-left: 2rem;
+        }
+
+        .info-desc p {
+            margin: 1rem 0 6rem 1rem;
+        }
+
+        
     }
 
     @media screen and (min-width: 992px) {
@@ -87,18 +152,13 @@
             margin-left: 9rem;
             transition: .4s;
         }
+        .info-img img {
+            height: 17rem;
+            margin-left: 2rem;
+        }
+    
+        .info-desc {
+            margin: 3rem 0 3rem 3rem;
+        }
     }
-
-    /* about section start  */
-    .about {
-        margin-top: 10rem;
-    }
-    .info {
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-      }
-      
-
-    /* main section end  */
 }

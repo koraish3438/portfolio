@@ -81,6 +81,14 @@ a {
   text-decoration: none;
 }
 
+hr {
+  width: 90%;
+  margin: 4rem auto;
+  height: .2rem;
+  color: white;
+  border-radius: 5px;
+}
+
 /* img {
   display: block;
   max-width: 100%;
@@ -253,6 +261,22 @@ a {
   padding: .5rem;
 }
 
+/* .section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 3rem;
+  height: 4px;
+  background-color: var(--text-color-light);
+  position: absolute;
+  left: 0;
+  bottom: -.3rem;
+  transition: width .4s;
+  border-radius: 50px;
+} */
+
 .about-container {
   margin-top: 2rem;
   position: relative;
@@ -275,38 +299,30 @@ a {
 }
 
 .info-desc p {
-  margin: 2rem 0 2rem 1rem;
+  margin: 2rem 0 5rem 1rem;
 }
 
-.info-desc h3::after {
+.info-title::after {
   content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.4rem;
   width: 2rem;
-  height: 3px;
-  background-color: var(--text-color-light);
-  position: absolute;
-  left: 0;
-  bottom: -.3rem;
-  transition: width .4s;
-  border-radius: 50px;
-}
-
-
-
-
-
-
-
-/* .info-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.5rem;
-  width: 4rem;
   background-color: var(--text-color-light);
   height: 3px;
   border-radius: 50px;
   transition: width .6s; 
-} */
+}
+
+
+button {
+  font-weight: bold;
+  color: white;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  color: black;
+}
+
 
 
 /* main section end  */
