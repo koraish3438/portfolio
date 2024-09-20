@@ -21,7 +21,6 @@
 
    /*========== Font Size ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Syne", sans-serif;
     --biggest-font-size: 3rem;
     --big-font-size: 1.5rem;
     --h1-font-size: 1.5rem;
@@ -65,8 +64,7 @@ h1 , h2 , h3 {
   /* font-family: "Playwrite CU", cursive; */
   /* font-family: "Montserrat", sans-serif;font-family: "Roboto", sans-serif; */
   /* font-family: "Italianno", cursive; */
-  /* font-family: var(--font-1); */
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--font-1);
 }
 
 p {
@@ -187,6 +185,10 @@ hr {
   margin: 1rem;
   text-align: left;
   position: relative;
+}
+
+.name  {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-desc h3 {
