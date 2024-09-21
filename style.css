@@ -80,7 +80,7 @@ a {
 }
 
 hr {
-  width: 90%;
+  width: 95%;
   margin: 4rem auto;
   height: .2rem;
   color: white;
@@ -325,6 +325,52 @@ button {
   color: black;
 }
 
+/* expreiance */
+
+.ab-ex {
+  border: 2px dashed;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  width: 30%;
+}
+
+.expreiance h2 {
+  margin: 3rem 0 2rem 0;
+}
+
+/* .expreiance {
+  row-gap: 1rem;
+} */
+
+.exp-content {
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.exp-data {
+  background-color: #141033;
+  box-shadow: 0 6px 10px 0 rgba(248, 243, 243, 0.2);
+  padding-bottom: 1.5rem ;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.exp-data:hover {
+  /* transform: translate(5px , 5px); */
+  transform: scale(1.1 , 1.1);
+}
+
+.exp-data h3 {
+  padding: 1rem;
+}
+
+.exp-desc {
+  padding: 1rem;
+}
 
 
 /* main section end  */

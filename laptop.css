@@ -79,86 +79,9 @@
 
     /* main section end  */
 
-    /* Another screen for responsive */
-    @media screen and (min-width: 768px) {
-        .home-photo {
-            padding-right: 4rem;
-            transition: .4s;
-        }
-
-        .home-desc {
-            margin-top: 11rem;
-            margin-left: 5rem;
-            transition: .4s;
-        }
-        
-
-        .info {
-            display: flex;
-            justify-content: space-between;
-            /* padding: 2rem; */
-        }
-    
-        .info-img img {
-            height: 15rem;
-            margin-left: 2rem;
-            transition: .4s;
-        }
-    
-        .info-desc {
-            margin: 2rem 0 0 2rem;
-    
-        }
-    
-        .info-desc p {
-            margin: 1rem 2rem 5rem 1rem;
-        }
-
-
-    }
-
-    @media screen and (min-width: 868px) {
-        .home-photo {
-            padding-right: 6rem;
-            transition: .4s;
-        }
-
-        .home-desc {
-            margin-top: 13rem;
-            margin-left: 7rem;
-            transition: .4s;
-        }
-
-        .info-img img {
-            height: 17rem;
-            margin-left: 2rem;
-        }
-
-        .info-desc p {
-            margin: 1rem 0 6rem 1rem;
-        }
-
-        
-    }
-
-    @media screen and (min-width: 992px) {
-        .home-photo {
-            padding-right:8rem;
-            transition: .3s;
-        }
-
-        .home-desc {
-            margin-top: 15rem;
-            margin-left: 9rem;
-            transition: .4s;
-        }
-        .info-img img {
-            height: 17rem;
-            margin-left: 2rem;
-        }
-    
-        .info-desc {
-            margin: 3rem 0 3rem 3rem;
-        }
+    /* expreiance section here */
+    .flex-container {
+        display: flex;
+        justify-content: center;
     }
 }
