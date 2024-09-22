@@ -353,15 +353,16 @@ button {
 
 .exp-data {
   background-color: #141033;
-  box-shadow: 0 6px 10px 0 rgba(248, 243, 243, 0.2);
   padding-bottom: 1.5rem ;
   border-radius: .5rem;
   transition: .3s;
+  box-shadow: 0 3px 5px 0 rgba(248, 243, 243, 0.2);
 }
 
 .exp-data:hover {
   /* transform: translate(5px , 5px); */
-  transform: scale(1.1 , 1.1);
+  transform: scale(1.05 , 1.05);
+  box-shadow: 0 6px 10px 0 rgba(248, 243, 243, 0.2);
 }
 
 .exp-data h3 {
