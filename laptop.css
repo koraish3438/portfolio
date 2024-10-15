@@ -84,4 +84,12 @@
         display: flex;
         justify-content: center;
     }
+
+
+    /* skill section start here  */
+    .skill-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+      }
 }

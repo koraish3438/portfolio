@@ -58,7 +58,7 @@ input , button , textarea {
   outline: none;
 }
 
-h1 , h2 , h3 {
+h1 , h2 , h3 , h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   /* font-family: "Playwrite CU", cursive; */
@@ -83,7 +83,7 @@ hr {
   width: 95%;
   margin: 4rem auto;
   height: .2rem;
-  color: white;
+  color: rgb(119, 104, 160);
   border-radius: 5px;
 }
 
@@ -373,5 +373,136 @@ button {
   padding: 1rem;
 }
 
+/* expreiance section end  */
+
+/* skill section start here  */
+
+.skil-title {
+  text-align: center;
+}
+
+.skill-container {
+  padding-left: 1rem;
+}
+
+.technical-skill-title {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.technical-skill-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.4rem;
+  width: 4rem;
+  background-color: var(--text-color-light);
+  height: 3px;
+  border-radius: 50px;
+  transition: width .6s; 
+}
+
+#icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.technical-bar {
+  padding: 1.5rem 0;
+  margin-left: 1rem;
+  position: relative;
+}
+
+
+.technical-bar #icon::before{
+  content: '';
+  background-color: rgb(41, 114, 114);
+  width: 95%;
+  height: 10px;
+  border-radius: 5000px;
+  position: absolute;
+  bottom: -.1rem;
+  left: 0;
+}
+
+.technical-bar #icon::after{
+  content: '';
+  background-color: #141033;
+  width: 0;
+  height: 10px;
+  border-radius: 5000px;
+  position: absolute;
+  bottom: -.1rem;
+  left: 0;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 0.5ms;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 5; */
+  /* animation-direction: forward; */
+}
+
+.technical-bar .icon-html::after{
+  animation-name: html;
+}
+@keyframes html {
+  100%{
+      width: 90%;
+  }
+}
+
+.main li.css::after{
+  animation-name: css;
+}
+@keyframes css {
+  to{
+      width: 80%;
+  }
+}
+
+.main li.js::after{
+  animation-name: js;
+}
+@keyframes js {
+  to{
+      width: 60%;
+  }
+}
+
+.main li.python::after{
+  animation-name: python;
+}
+@keyframes python {
+  to{
+      width: 50%;
+  }
+}
+
+.main li.java::after{
+  animation-name: java;
+}
+@keyframes java {
+  to{
+      width: 90%;
+  }
+}
+
+.professional-skill-title {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.professional-skill-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.4rem;
+  width: 4rem;
+  background-color: var(--text-color-light);
+  height: 3px;
+  border-radius:500px;
+  transition: width .6s; 
+}
+/* skill section end  */
 
 /* main section end  */
