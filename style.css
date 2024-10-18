@@ -379,14 +379,20 @@ button {
 
 .skil-title {
   text-align: center;
+  font-weight: 700;
+  padding-bottom: 2rem;
 }
 
 .skill-container {
   padding-left: 1rem;
 }
 
+.technical-skill {
+  margin-bottom: 3rem;
+}
+
 .technical-skill-title {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   position: relative;
 }
 
@@ -416,9 +422,9 @@ button {
 
 .technical-bar #icon::before{
   content: '';
-  background-color: rgb(41, 114, 114);
+  background-color: rgb(0, 0, 0);
   width: 95%;
-  height: 10px;
+  height: 7px;
   border-radius: 5000px;
   position: absolute;
   bottom: -.1rem;
@@ -427,69 +433,78 @@ button {
 
 .technical-bar #icon::after{
   content: '';
-  background-color: #141033;
+  background-color: #0ef;
   width: 0;
-  height: 10px;
+  height: 7px;
   border-radius: 5000px;
   position: absolute;
   bottom: -.1rem;
   left: 0;
   animation-timing-function: ease-in;
-  animation-duration: 3s;
-  animation-delay: 0.5ms;
+  animation-duration: 3.5s;
+  animation-delay: 0.9ms;
   animation-fill-mode: forwards;
-  /* animation-iteration-count: 5; */
+  /* animation-iteration-count: infinite; */
   /* animation-direction: forward; */
+  box-shadow: 0 1px 5px rgb(51, 2, 141);
 }
 
 .technical-bar .icon-html::after{
   animation-name: html;
 }
 @keyframes html {
+  
   100%{
       width: 90%;
+      background-color: rgb(223, 116, 116);
   }
 }
 
-.main li.css::after{
+.technical-bar .icon-css::after{
   animation-name: css;
 }
 @keyframes css {
   to{
       width: 80%;
+      background-color: rgb(223, 116, 116);
   }
 }
 
-.main li.js::after{
+.technical-bar .icon-bootstrap::after{
+  animation-name: bootstrap;
+}
+@keyframes bootstrap {
+  to{
+      width: 70%;
+      background-color: rgb(223, 116, 116);
+  }
+}
+
+.technical-bar .icon-javascript::after{
   animation-name: js;
 }
 @keyframes js {
   to{
       width: 60%;
+      background-color: rgb(224, 147, 147);
   }
 }
 
-.main li.python::after{
-  animation-name: python;
+.technical-bar .icon-reactjs::after{
+  animation-name: react-js;
 }
-@keyframes python {
+@keyframes react-js {
   to{
       width: 50%;
+      background-color: rgb(221, 176, 176);
   }
 }
 
-.main li.java::after{
-  animation-name: java;
-}
-@keyframes java {
-  to{
-      width: 90%;
-  }
-}
+
+/* professional skill section start  */
 
 .professional-skill-title {
   position: relative;
-  margin-top: 3rem;
 }
 
 .professional-skill-title::after {
@@ -503,6 +518,143 @@ button {
   border-radius:500px;
   transition: width .6s; 
 }
+
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+
+.radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+
+.radial-bar .prograss-bar {
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% { 
+    stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 {
+  animation: animate-path1 1s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 1s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes animate-path2 {
+  100%{
+    stroke-dashoffset: 175;
+  }
+}
+
+@keyframes animate-path3 {
+  100%{
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes animate-path4 {
+  100%{
+    stroke-dashoffset: 75;
+  }
+}
+
+.radial-bar .persentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showtext 0.5 1s linear forwards;
+  /* opacity: 0; */
+}
 /* skill section end  */
+
+/* services section start here */
+
+.service h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  height: 20rem;
+  padding: 1rem;
+  color: white;
+  background-color: #141033;
+  border-radius: 1rem;
+  text-align: center;
+  display: grid;
+  transition: .5s ease-in;
+  box-shadow: 2px 2px 2px #95b49d inset;
+  background-color: #050222;
+}
+
+.card i {
+  font-size: 3rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* services section end here */
 
 /* main section end  */

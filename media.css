@@ -1,5 +1,6 @@
 /* Another screen for responsive */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 600px) {
     .home-photo {
         padding-right: 4rem;
         transition: .4s;
@@ -33,7 +34,14 @@
         margin: 1rem 2rem 5rem 1rem;
     }
 
+    /* service section start here  */
 
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* service section end here  */
 }
 
 @media screen and (min-width: 868px) {
@@ -57,6 +65,15 @@
         margin: 1rem 0 6rem 1rem;
     }
 
+    /* service section start here  */
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    /* service section end here  */
+
     
 }
 
@@ -79,4 +96,13 @@
     .info-desc {
         margin: 3rem 0 3rem 3rem;
     }
+
+    /* service section start here  */
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    /* service section end here  */
 }
