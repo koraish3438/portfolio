@@ -1,6 +1,100 @@
 /* Another screen for responsive */
-
 @media screen and (min-width: 600px) {
+    /* header section start  */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        position: relative;
+    }
+
+    .navbar {
+        display: block;
+        position: absolute;
+        top: .1rem;
+        right: .1rem;
+    }
+
+    .nav-menu{
+        flex-direction: row;
+        column-gap: 1.5rem;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+    /* header section end  */
+
+    /* main section start  */
+
+
+    .home-photo {
+        text-align: right;
+        padding-right: 2rem;
+        float: right;
+        transition: .4s;
+    }
+
+    .home-desc {
+        margin-left: 2.5rem;
+        margin-top: 9rem;
+        float: left;
+    }
+
+    .photo-bio::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .home-scrol {
+        margin-top: 5rem;
+    }
+
+
+    /* about section start  */
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 2rem; */
+    }
+
+    .info-img img {
+        height: 13rem;
+    }
+
+    .info-desc {
+        margin: 2rem 0 0 2rem;
+
+    }
+
+    .info-desc p {
+        margin: 1rem 0 4rem 1rem;
+    }  
+
+    .button {
+        position: absolute;
+        right: 6rem;
+    }
+
+    /* main section end  */
+
+    /* expreiance section here */
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* skill section start here  */
+    .skill-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+      }
+}
+@media screen and (min-width: 768px) {
     .home-photo {
         padding-right: 4rem;
         transition: .4s;
