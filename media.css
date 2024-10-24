@@ -92,8 +92,24 @@
         display: flex;
         justify-content: space-between;
         padding: 2rem;
-      }
+    }
+
+    /* contact section start  */
+    .contact-container {
+        display: gird;
+        grid-template-columns: 50% 50%;
+    }
+
+    .mail-section {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .item-section {
+        border-radius: 0 1rem 1rem 0;
+    }
 }
+
+/* screen for tablet */
 @media screen and (min-width: 768px) {
     .home-photo {
         padding-right: 4rem;

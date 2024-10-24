@@ -16,6 +16,7 @@
   --text-color-light: hsl(var(--hue), 20%, 70%);
   --body-color: #181e39;
   --container-color: hsl(var(--hue), 40%, 20%);
+  --white-color: #ffffff;
 
   --font-1: "Syne", sans-serif;
 
@@ -656,5 +657,200 @@ button {
 
 
 /* services section end here */
+
+/* contact section start here  */
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding-bottom: 2rem;
+}
+
+form {
+  padding: 0 50px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mail-section {
+  background-color: #fc0000;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.mail-section h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.input-box {
+  margin: 2.5rem 0;
+  height: 40px;
+  width: 70%;
+  position: relative;
+}
+
+input {
+  border-radius: 20px;
+  padding: .1rem 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+}
+
+textarea {
+  border-radius: 20px;
+  padding: .2rem 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+}
+
+label {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.submit {
+  margin: 2rem 0;
+  width: 7rem;
+  height: 2.3rem;
+  border-radius: 5rem;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 .5rem;
+  border: none;
+}
+
+.submit:hover {
+  background-color: #fc0000;
+  color: black;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: .4s;
+}
+
+textarea {
+  resize: none;
+}
+
+.item-section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
+}
+
+.item {
+  text-align: left;
+}
+
+.item h3 {
+  text-align: left;
+  color: black;
+  padding-bottom: .5rem;
+}
+
+.item a {
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+  margin: 0 .5rem;
+}
+
+.item a:hover {
+  transition: .3s;
+  color: blue;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* contact section end here  */
+
+/* footer section start here  */
+
+.footer {
+  background-color: black;
+  height: 5rem;
+  width: 100%;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.footer-item {
+  height: 3rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.footer-item ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item ul li a {
+  color: var(--white-color);
+  margin: 0 .5rem;
+}
+
+.footer-item li a {
+  position: relative;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.footer-item a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--first-color-light);
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  transition: width .3s;
+}
+
+.footer-item a:hover {
+  color: var(--first-color);
+}
+
+.footer-item a:hover::after{
+  width: 60%;
+}
+
+#scroll-top {
+  font-size: 1.4rem;
+}
+
+.copyright {
+  height: 2rem;
+  width: 100%;
+}
+
+.copyright p {
+  text-align: center;
+  padding-top: .3rem;
+}
+
+/* footer section end hrer  */
 
 /* main section end  */
