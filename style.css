@@ -17,8 +17,8 @@
   --body-color: #181e39;
   --container-color: hsl(var(--hue), 40%, 20%);
   --white-color: #ffffff;
-
   --font-1: "Syne", sans-serif;
+  
 
    /*========== Font Size ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -233,7 +233,7 @@ hr {
   overflow: hidden;
 }
 
-.home-scroll-text{
+.home-scroll-text {
   font-weight: var(--font-semi-bold);
 }
 
